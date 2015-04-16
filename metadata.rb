@@ -1,0 +1,11 @@
+name             'drill'
+maintainer       'lewuathe'
+maintainer_email 'lewuathe@me.com'
+license          'MIT'
+description      'Installs/Configures drill-cookbook'
+long_description 'Installs/Configures drill-cookbook'
+version          '0.0.1'
+depends          'java'
+depends          'zookeeper'
+depends          'apt'
+

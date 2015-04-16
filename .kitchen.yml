@@ -1,0 +1,26 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+    driver:
+      customize:
+        memory: 16384
+      network:
+        - ["forwarded_port", {guest: 8047, host: 8047}]
+        - ["private_network", {ip: "192.168.33.33"}]
+
+suites:
+  - name: default
+    run_list:
+      - recipe[apt]
+      - recipe[drill::zookeeper]
+      - recipe[drill::drillbit]
+      - recipe[drill::drillbit_start]
+    attributes:
+      drill:
+        install_method: "cookbook_file"
