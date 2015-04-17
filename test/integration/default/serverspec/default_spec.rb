@@ -1,12 +1,5 @@
 require 'spec_helper'
 
-describe 'drill-cookbook::default' do
-
-  # Serverspec examples can be found at
-  # http://serverspec.org/resource_types.html
-  
-  it 'does something' do
-    skip 'Replace this with meaningful tests'
-  end
-
+describe host('192.168.33.33') do
+  it { should be_reachable }
 end
