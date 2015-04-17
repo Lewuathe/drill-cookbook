@@ -88,7 +88,7 @@ Usage
 If you use `cookbook_file` option, first you have to add your drill package under `files/default` as tar.gz format.
 
 ```
-$ cp <your storm package> cookbooks/drill/files/default/
+$ cp <your drill package> cookbooks/drill/files/default/
 ```
 
 ## Recipes
@@ -97,6 +97,7 @@ For setting up drillbit configuration.
 
 ### drillbit
 For nimbus node
+
 ```json
 {
   "name":"drillbit",
@@ -108,6 +109,7 @@ For nimbus node
 
 ### Start drillbit
 For starting drillbit
+
 ```json
 {
   "name":"drillbit_start",
