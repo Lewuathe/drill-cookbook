@@ -11,8 +11,6 @@ env:
 install:
   - sudo apt-get update -q
   - sudo apt-get install -q virtualbox --fix-missing
-  - sudo wget -nv https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_64.deb
-  - sudo dpkg -i vagrant_1.7.2_x86_64.deb
   - sudo wget -nv https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.4.0-1_amd64.deb
   - sudo dpkg -i chefdk_0.4.0-1_amd64.deb
   - bundle install
