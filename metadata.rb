@@ -4,7 +4,7 @@ maintainer_email 'lewuathe@me.com'
 license          'MIT License'
 description      'Installs/Configures Apache Drill cluster'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.0.3'
+version          '0.0.4'
 source_url       'https://github.com/Lewuathe/drill-cookbook'
 issues_url       'https://github.com/Lewuathe/drill-cookbook/issues'
 provides         'drill::drillbit'
@@ -13,4 +13,3 @@ provides         'drill::zookeeper'
 depends          'java'
 depends          'zookeeper'
 depends          'apt'
-

@@ -18,70 +18,17 @@ Attributes
 ----------
 
 #### storm::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['drill']['install_dir']</tt></td>
-    <td>String</td>
-    <td>Drill package is installed here.</td>
-    <td><tt>/opt/drill</tt></td>
-  </tr>
 
-  <tr>
-    <td><tt>['drill']['version']</tt></td>
-    <td>String</td>
-    <td>Drill version.</td>
-    <td><tt>0.8.0</tt></td>
-  </tr>
-
-  <tr>
-    <td><tt>['drill']['mirror_url']</tt></td>
-    <td>String</td>
-    <td>Drill package is downloaded from here.</td>
-    <td><tt>http://ftp.yz.yamagata-u.ac.jp/pub/network/apache/drill/drill-#{node['drill']['version']}/apache-drill-#{node['drill']['version']}.tar.g</tt></td>
-  </tr>
-
-  <tr>
-    <td><tt>['drill']['install_method']</tt></td>
-    <td>String</td>
-    <td>Set to remote_file to download from drill.apache.org.</td>
-    <td><tt>cookbook_file</tt></td>
-  </tr>
-
-  <tr>
-    <td><tt>['drill']['cluster_id']</tt></td>
-    <td>String</td>
-    <td>The ID of Drillbits cluster.</td>
-    <td><tt>drillbits1</tt></td>
-  </tr>
-
-  <tr>
-    <td><tt>['drill']['zk_connect']</tt></td>
-    <td>String</td>
-    <td>ZooKeeper host name and port.</td>
-    <td><tt>localhost:2181</tt></td>
-  </tr>
-
-  <tr>
-    <td><tt>['drill']['MAX_HEAP']</tt></td>
-    <td>String</td>
-    <td>Max heap size used by drill JVM.</td>
-    <td><tt>4G</tt></td>
-  </tr>
-
-  <tr>
-    <td><tt>['drill']['MAX_DIRECT_MEMORY']</tt></td>
-    <td>String</td>
-    <td>You can increase the direct buffer memory which is distinct from heap.</td>
-    <td><tt>8G</tt></td>
-  </tr>
-</table>
-
+|Key|Type|Description|Default|
+|:---|:---|:---|:---|
+|['drill']['install_dir']|String|Drill package is installed here.|/opt/drill|
+|['drill']['version']|String|Drill version.|0.8.0|
+|['drill']['mirror_url']|String|Drill package is downloaded from here.|http://ftp.yz.yamagata-u.ac.jp/pub/network/apache/drill/drill-#{node['drill']['version']}/apache-drill-#{node['drill']['version']}.tar.g|
+|['drill']['install_method']|String|Set to remote_file to download from drill.apache.org.|cookbook_file|
+|['drill']['cluster_id']|String|The ID of Drillbits cluster.|drillbits1|
+|['drill']['zk_connect']|String|ZooKeeper host name and port.|localhost:2181|
+|['drill']['MAX_HEAP']|String|Max heap size used by drill JVM.|4G|
+|['drill']['MAX_DIRECT_MEMORY']|String|You can increase the direct buffer memory which is distinct from heap.|8G|
 
 Usage
 -----
